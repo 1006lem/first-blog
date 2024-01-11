@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 상단바 -->
+    <header id = "header">
+        <nav class="inner">
+            <!-- 입력 창(검색) -->
+            <span class="search">
+                <s_search>
+                    <input class="input" type="text" onkeypree="if (event.keyCode == 13) {''}">
+                    <button type="submit" onclick="">검색</button>
+                </s_search>
+            </span>
+            
+    
+            <!-- 링크 드롭다운 메뉴바 --> 
+            <span class="dropdown">
+                <button onclick="btnClick()" class="dropdown-btn">link</button>
+                <div class="dropdown-content">
+                    <ul type="none">
+                        <li><a href="https://www.kyumin.blog" target="_blank">blog</a></li>
+                        <li><a href="https://github.com/1006lem" target="_blank">github</a></li>
+                    </ul>
+                </div>
+            </span>
+        </nav>
+    </header>
+
+    <!-- UP 버튼 -->
+    <p>UP</p>
+
+    <!-- 블로그 환영문구 -->
+    <section class="blog">
+        <p id = "dynamic" class="cursor"></p>
+        <p class="small-text"> 
+            <a href="https://github.com/1006lem" target="_blank">1006lem | github </a>
+        </p>
+    </section>
+    <section>
+        <!-- 간단인사 -->
+        <section class="hello">
+            <h1>Hello!</h1>
+            <h2>I'm 1006lem, Undergraduate Student</h2>
+        </section>
+
+        <!-- 관심사 -->
+        <section class="interests">
+            <h1>I'm interested in</h1>
+            <h2>Infrastructure</h2>
+            <h2>Cloud</h2>
+            <h3>...</h3>
+        </section>
+
+        <!-- 기술스택 -->
+        <section class="stacks">
+            <h1>What I've done with</h1>
+            <!-- 3개의 레일, 애니메이션 -->
+        </section>
+
+        <!-- 쿠버네티스 -->
+        <section class="Kubernetes">
+            <h1>Kubernetes</h1>
+            <img src="images/k8s.png" alt="Kubernetes Logo" width="100">
+            <div>
+                <div class="info">
+                    <p>using kubectl</p>
+                    <p>Setting up a cluster (Private CLoud)</p>
+                    <p><span style="color:#FFFA78">retrieving cluster information</span> <br>
+                        based on tokens & golang (with client-go)</p>
+                </div>
+
+                <div>
+                    <p><span style="color:#FFFA78">CRD</span> with kubebuilder</p>
+                    <p><span style="color:#FFFA78">Tetragon</span> project</p>
+                    <p>studying <span style="color:#FFFA78">istio</span></p>
+                    <p></p>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- 도커 -->
+        <section class="Docker">
+            <h1>Docker</h1>
+            <img src="images/docker.svg" alt="Docker Logo" width="100">
+            <div class="info">
+                <p>Creating docker image</p>
+                <p>docker cli</p>
+            </div>
+        </section>
+
+        <!-- 안드로이드 스튜디오 -->
+        <section class="Android-Studio">
+            <h1>Android Studio</h1>
+            <img src="images/android_studio.svg" alt="Android Studio Logo" width="80">
+            <div class="info">
+                <p>using <span style="color:#FFFA78">kotlin</span></p>
+                <p>Frontend develpment for an <span style="color:#FFFA78">Android App</span></p>
+            </div>
+        </section>
+
+
+        <!-- 끝맺음 인사 -->
+        <section class="close">
+            Thank you
+        </section>
+    </section>
+   
+
+    <footer>
+        <div class="inner">
+            <p>Updated 2024-1-11</p>
+            <p>Copyright 2024. 1006lem All rights rserved</p>
+        </div>
+        
+    </footer>
+    <!-- javascript 참조 -->
+    <script src="./main.js"></script>
+    
+</body>
+</html>

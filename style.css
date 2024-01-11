@@ -1,0 +1,178 @@
+p {
+    font-family: 'Tektur', sans-serif;
+}
+
+h1 {
+    font-family: 'Tektur', sans-serif;
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-family: 'Tektur', sans-serif;
+    font-size: 1.2rem;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+}
+
+header{
+    height: 32px;
+    padding: 3px;
+    /* background-color: #e3cf5e; */
+    background-color: rgb(255, 225, 92)
+}
+
+header .inner {
+    float:right;
+    padding-right: 80px;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+    /* float:right; */
+}
+
+.dropdown-content {
+    display: none;
+    /* 조상인 dropdown 기준으로 배치 (position: absolute) */
+    position: absolute;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.101);
+    border-radius: 8px;
+    /* z-index: 1; */
+}
+
+.blog{
+    position:absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.blog .small-text a{
+    color: #e3cf5e;
+}
+
+/* 
+content:"\f0d2";
+  font-family: "Font Awesome 5 Brands"; */
+
+.cursor{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dynamic{
+    position: static;
+    /*block tag에서 속성 변화*/
+    display: inline-block;
+    /* white-space: nowrap; */
+}
+
+/* 가상 요소 (class)인 after 생성 */
+#dynamic::after{
+    content:"";
+    display: blockback;
+    position: absolute;
+    background-color: white;
+    height: 2rem;
+    right: -10;
+    top: var(--after-top, 0px);
+    padding-top: 0px; 
+    width: 4px;
+}
+
+#dynamic.active:after{
+    display: none;
+}
+
+/* TODO; UP 버튼 */
+
+.hello{
+    position:absolute;
+    left: 50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.interests{
+    position:absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.stacks{
+    position:absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.Kubernetes{
+    position:absolute;
+    left: 50%;
+    top: 250%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.Docker{
+    position:absolute;
+    left: 50%;
+    top: 350%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.info p{
+    padding-bottom: 10px;
+}
+
+.Android-Studio{
+    position:absolute;
+    left: 50%;
+    top: 450%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.close{
+    position:absolute;
+    left: 50%;
+    top: 500%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    position:absolute;
+    left: 50%;
+    top: 520%;
+    padding-bottom: 50px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
