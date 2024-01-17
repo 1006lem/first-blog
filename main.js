@@ -71,3 +71,18 @@ function btnClick(){
         dropdownContent.style.display = "none";
     }
 }
+
+/* 검색창 */
+function searchText(){
+    var inputText = document.getElementById("searchInput").value;
+    var found = window.find(inputText);
+
+    // 만약 찾았다면 스크롤
+    if (found){
+        var element = document.getSelection().anchorNode.parentElement;
+        element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+    }
+    else{
+        alert('text not found')
+    }
+}
