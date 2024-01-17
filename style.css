@@ -64,6 +64,19 @@ header .inner {
     color: #e3cf5e;
 }
 
+.rail{
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    
+    /* 중앙 정렬 (수평) */
+    /* justify-content: center; */
+}
+
+.rail img{
+    padding-right: 20px
+}
+
 /* 
 content:"\f0d2";
   font-family: "Font Awesome 5 Brands"; */
@@ -146,6 +159,12 @@ content:"\f0d2";
 }
 
 .info p{
+    /* 기본으로 불투명도 0 (보이지 않게) */
+    opacity: 0;
+    padding-top: 10px;
+}
+
+.info p{
     padding-bottom: 10px;
 }
 
@@ -158,6 +177,12 @@ content:"\f0d2";
     text-align: center;
 }
 
+
+/* 로고 이미지 앞뒤로 padding */
+.logo{
+    padding-top: 10px;
+}
+
 .close{
     position:absolute;
     left: 50%;
@@ -166,6 +191,8 @@ content:"\f0d2";
     color: white;
     text-align: center;
 }
+
+
 
 footer{
     position:absolute;

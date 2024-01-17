@@ -45,8 +45,7 @@ function updateAfterTop() {
     var numberOfLines = Math.floor(lineHeight / oneLineHeight);
     //console.log(numberOfLines)
 
-
-    console.log($("#dynamic").css('--after-top'))
+    //console.log($("#dynamic").css('--after-top'))
     if (numberOfLines >= 2) {
         $("#dynamic").css('--after-top', oneLineHeight * (numberOfLines-1) + 18  + 'px');
 
@@ -82,7 +81,52 @@ function searchText(){
         var element = document.getSelection().anchorNode.parentElement;
         element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
     }
-    else{
-        alert('text not found')
-    }
+    // else{
+    //     alert('text not found')
+    // }
 }
+
+
+/* 스크롤 fade in (k8s, docker, android-studio) */
+$(document).ready(function(){
+    //var animationQueue = []; // 애니메이션 큐
+
+    $(window).scroll(function(){
+        $('.info').each(function(){
+            // 쿠버네티스 섹션이 중앙에 오면 fade in 되도록 
+            var k8sSection = $(".Kubernetes");
+            handleSection(k8sSection)
+
+            // 도커 섹션이 중앙에 오면 fade in 되도록 
+            var dockerSection = $(".Docker");
+            handleSection(dockerSection)
+
+            // 안드로이드 스튜디오 섹션이 중앙에 오면 fade in 되도록 
+            var androidStudioSection = $(".Android-Studio");
+            handleSection(androidStudioSection)
+        });
+    });
+
+    // 섹션에 대한 처리 함수
+    function handleSection(section) {
+        if (isElementInViewport(section)) {
+            section.find(".info p").each(function(index, element){
+                setTimeout(function(){
+                    $(element).animate({'opacity': 1}, 500);
+                }, 250 * index);
+            });
+        } else {
+            
+        }
+    }
+
+    // 요소가 뷰포트 안에 있는지 확인하는 함수
+    function isElementInViewport(element) {
+        var rect = element[0].getBoundingClientRect();
+        return (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+        );
+    }
+});
+
