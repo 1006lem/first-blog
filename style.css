@@ -9,14 +9,15 @@ p {
 
 h1 {
     font-family: 'Tektur', sans-serif;
-    font-size: 1.7rem;
+    font-size: 2.8rem;
     padding-bottom: 10px;
 }
 
 h2{
     font-family: 'Tektur', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
+
 
 * {
     margin:0;
@@ -80,8 +81,10 @@ header .inner {
     position: static;
     /*block tag에서 속성 변화*/
     display: inline-block;
+    font-size: 2rem;
     /* white-space: nowrap; */
 }
+
 
 /* 가상 요소 (class)인 after 생성 */
 #dynamic::after{
@@ -102,6 +105,8 @@ header .inner {
 
 /* TODO; UP 버튼 */
 
+/* 간단인사(.hello), 관심사(.interests) fade-in */
+
 .hello{
     position:absolute;
     left: 50%;
@@ -109,6 +114,7 @@ header .inner {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    animation-fill-mode: forwards;
 }
 
 .interests{
@@ -118,6 +124,71 @@ header .inner {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    animation-fill-mode: forwards;
+}
+
+.hello h1{
+    animation: fadein 3s;
+}
+
+
+/*I'm interested in*/
+.interests h1{
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+/*I'm 1006lem,*/
+.hello h2:nth-child(2) {
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*Undergraduate Student*/
+.hello h2:nth-child(3) {
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+/*Infrastructure*/
+.interests h2:nth-child(2) {
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards;
+}
+
+/*cloud*/
+.interests h2:nth-child(3) {
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+/*...*/
+.interests h3 {
+    opacity: 0;
+    animation: fadein 3s;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards;
+}
+
+
+/*fade in 효과*/
+@keyframes fadein { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* 기술 스택 영역 */
@@ -255,7 +326,7 @@ header .inner {
 .Docker{
     position:absolute;
     left: 50%;
-    top: 260%;
+    top: 280%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -274,7 +345,7 @@ header .inner {
 .Android-Studio{
     position:absolute;
     left: 50%;
-    top: 320%;
+    top: 360%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -294,8 +365,6 @@ header .inner {
     color: white;
     text-align: center;
 }
-
-
 
 footer{
     position:absolute;
