@@ -30,15 +30,16 @@ body {
 }
 
 header{
-    height: 25px;
-    padding: 3px;
+    height: 33px;
     /* background-color: #e3cf5e; */
-    background-color: rgb(255, 225, 92)
+    background-color: rgb(255, 225, 92);
 }
 
 header .inner {
     float:right;
     margin-right: 20px;
+    /* TODO: 중앙정렬 */
+    margin-top: 5px;
 }
 
 /* 입력 창 (검색) */
@@ -84,10 +85,13 @@ header .inner {
 }
 
 .dropdown button{
-    border-radius: 10px;
-    width: 30px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     border-color: transparent;
     background-color: transparent;
+    padding-bottom: 5px;
+    
 }
 
 .dropdown-content {
@@ -95,13 +99,22 @@ header .inner {
     /* 조상인 dropdown 기준으로 배치 (position: absolute) */
     position: absolute;
     color: white;
-    background-color: rgba(255, 255, 255, 0.101);
+    /* background-color: rgba(53, 53, 53, 0.516); */
     border-radius: 8px;
+    width: 45px;
     /* z-index: 1; */
 }
 
+.dropdown-content ul li{
+    text-align: center;
+    margin-bottom: 3px;
+}
 
+.dropdown-content ul li a{ 
+    color: #ffffff;
+    text-decoration-line: none;
 
+}
 
 /* 블로그 환영 문구 */
 .blog{
@@ -416,7 +429,7 @@ header .inner {
 footer{
     position:absolute;
     left: 50%;
-    top: 420%;
+    top: 440%;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
     color: white;
