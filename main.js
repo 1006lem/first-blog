@@ -130,3 +130,39 @@ $(document).ready(function(){
     }
 });
 
+
+// 각 .origin_and_clone 요소를 선택
+let originAndClones = document.querySelectorAll('.origin_and_clone');
+
+// 각 .origin_and_clone에 대해 반복
+originAndClones.forEach((originAndClone, index) => {
+    // 현재 .origin_and_clone의 하위 .rail 요소 선택
+    let rail = originAndClone.querySelector('.rail');
+
+    // .rail 요소 복제
+    let clone = rail.cloneNode(true);
+
+    // 복제본에 새로운 아이디 부여
+    clone.id = 'railClone' + (index + 1);
+
+    // .origin_and_clone에 복제본 추가
+    originAndClone.appendChild(clone);
+
+    // class 추가 
+    rail.classList.add('original');
+    clone.classList.add('clone');
+});
+
+
+//마우스 이벤트 핸들링
+// document.querySelector('.origin_and_clone').addEventListener('mouseenter', function () {
+//   rails.forEach((rail) => {
+//     rail.style.animationPlayState = 'paused';
+//   });
+// });
+
+// document.querySelector('.origin_and_clone').addEventListener('mouseleave', function () {
+//   rails.forEach((rail) => {
+//     rail.style.animationPlayState = 'running';
+//   });
+// });

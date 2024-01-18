@@ -51,14 +51,14 @@
         <!-- 간단인사 -->
         <section class="hello">
             <h1>Hello!</h1>
-            <h2>I'm 1006lem, Undergraduate Student</h2>
+            <h2>I'm <span style="color:#FFFA78">1006lem</span>, Undergraduate Student</h2>
         </section>
 
         <!-- 관심사 -->
         <section class="interests">
             <h1>I'm interested in</h1>
-            <h2>Infrastructure</h2>
-            <h2>Cloud</h2>
+            <h2><span style="color:#FFFA78">Infrastructure</span></h2>
+            <h2><span style="color:#FFFA78">Cloud</span></h2>
             <h3>...</h3>
         </section>
 
@@ -66,21 +66,29 @@
         <section class="stacks">
             <h1>What I've done with</h1>
             <!-- 3개의 레일, 애니메이션 -->
-            <div class="rail">
-                <img src="images/k8s.png" alt="Kubernetes Logo" width="100">
-                <img src="images/docker.svg" alt="Kubernetes Logo" width="100">
-            </div>
+            <div class="rails">
+                <div class="origin_and_clone">
+                    <div class="rail">
+                        <img src="images/k8s.png" alt="Kubernetes Logo" height="40px">
+                        <img src="images/docker.svg" alt="Kubernetes Logo" height="40px">
+                    </div>
+                </div>
 
-            <div class="rail">
-                <img src="images/android_studio.svg" alt="Android Studio Logo" width="100">
-            </div>
+                <div class="origin_and_clone">
+                    <div class="rail">
+                        <img src="images/android_studio.svg" alt="Android Studio Logo" height="40">
+                    </div>
+                </div>
 
-            <div class="rail">
-                <img src="images/python.svg" alt="Python Logo" width="100">
-                <img src="images/go.png" alt="Go Logo" width="150">
-                <img src="images/java.svg" alt="Java Logo" width="150">
+                <div class="origin_and_clone">
+                    <div class="rail">
+                        <img src="images/python.svg" alt="Python Logo" height="40">
+                        <img src="images/go.png" alt="Go Logo" height="30px">
+                        <img src="images/java.svg" alt="Java Logo" height="30px">
+                    </div>
+                </div>
             </div>
-
+            
         </section>
 
         <!-- 쿠버네티스 -->
@@ -140,6 +148,8 @@
     </footer>
     <!-- javascript 참조 -->
     <script src="./main.js"></script>
+
+   
     
 </body>
 </html>

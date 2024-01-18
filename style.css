@@ -64,22 +64,6 @@ header .inner {
     color: #e3cf5e;
 }
 
-.rail{
-    display: flex;
-    padding-bottom: 20px;
-    align-items: center;
-    
-    /* 중앙 정렬 (수평) */
-    /* justify-content: center; */
-}
-
-.rail img{
-    padding-right: 20px
-}
-
-/* 
-content:"\f0d2";
-  font-family: "Font Awesome 5 Brands"; */
 
 .cursor{
     font-size: 2rem;
@@ -131,14 +115,80 @@ content:"\f0d2";
     text-align: center;
 }
 
+/* 기술 스택 영역 */
 .stacks{
     position:absolute;
-    left: 50%;
-    top: 150%;
-    transform: translate(-50%, -50%);
+    top: 120%;
+
+    /* viewport width와 100% 동일하게 */
+    width: 100vw;
     color: white;
     text-align: center;
 }
+
+.stacks h1{
+    position: center;
+    margin-bottom: 80px;
+}
+
+
+.rails{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.origin_and_clone{
+    
+    /*나란히 배치*/ 
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-start;
+    
+    flex-basis: 100%;
+    width: 200vw;
+    /* width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row */
+} 
+
+.rail{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    /* 중앙 정렬 (수평) */
+    /* justify-content: center; */
+    padding: 10px;
+    background-color: #ffffff1b;
+    margin-bottom: 30px;
+}
+
+.rail img{
+    padding-right: 20px;
+}
+
+/* 기술 스택 무한 롤링 */
+.rail.original {
+	animation: rollingleft1 33s linear infinite;
+} 
+.rail.clone {
+	animation: rollingleft2 33s linear infinite;
+} 
+
+@keyframes rollingleft1 {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(-100%); }
+	50.01% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+	0% { transition: translateX(0); }
+	100% { transform: translateX(-200%); }
+} 
+
+
 
 .Kubernetes{
     position:absolute;
