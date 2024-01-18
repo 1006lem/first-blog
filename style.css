@@ -30,7 +30,7 @@ body {
 }
 
 header{
-    height: 32px;
+    height: 25px;
     padding: 3px;
     /* background-color: #e3cf5e; */
     background-color: rgb(255, 225, 92)
@@ -38,13 +38,56 @@ header{
 
 header .inner {
     float:right;
-    padding-right: 80px;
+    margin-right: 20px;
 }
 
+/* 입력 창 (검색) */
+.search{
+    position: relative;
+    display:inline-block;
+}
+
+.search .input{
+    border-radius: 10px;
+    border-color: #26262600;
+    background-color: #cbb34a63;
+    padding-right: 22px; 
+    /* 글자색 */
+    color: #6b6b6b; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+/* 클릭 시 테두라 */
+.search .input:focus{
+    outline: none;
+}
+
+.search button{
+    border-radius: 10px;
+    width: 35px;
+    border-color: transparent;
+    background-color: #cbb34ad2;
+    margin-left: -25px; 
+}
+
+.search .button:focus{
+    outline: none;
+}
+
+/* 링크 드롭다운 메뉴바 */
 .dropdown{
     position:relative;
     display:inline-block;
+    margin-left: 10px;
     /* float:right; */
+}
+
+.dropdown button{
+    border-radius: 10px;
+    width: 30px;
+    border-color: transparent;
+    background-color: transparent;
 }
 
 .dropdown-content {
@@ -57,6 +100,10 @@ header .inner {
     /* z-index: 1; */
 }
 
+
+
+
+/* 블로그 환영 문구 */
 .blog{
     position:absolute;
     left: 50%;
