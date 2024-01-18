@@ -3,6 +3,10 @@ p {
     font-size: 1.2rem;
 }
 
+.inner p {
+    font-size: 0.8rem;
+}
+
 h1 {
     font-family: 'Tektur', sans-serif;
     font-size: 1.7rem;
@@ -119,7 +123,7 @@ header .inner {
 /* 기술 스택 영역 */
 .stacks{
     position:absolute;
-    top: 120%;
+    top: 100%;
 
     /* viewport width와 100% 동일하게 */
     width: 100vw;
@@ -242,7 +246,7 @@ header .inner {
 .Kubernetes{
     position:absolute;
     left: 50%;
-    top: 250%;
+    top: 200%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -251,7 +255,7 @@ header .inner {
 .Docker{
     position:absolute;
     left: 50%;
-    top: 350%;
+    top: 260%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -270,7 +274,7 @@ header .inner {
 .Android-Studio{
     position:absolute;
     left: 50%;
-    top: 450%;
+    top: 320%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -285,7 +289,7 @@ header .inner {
 .close{
     position:absolute;
     left: 50%;
-    top: 500%;
+    top: 400%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -296,7 +300,7 @@ header .inner {
 footer{
     position:absolute;
     left: 50%;
-    top: 520%;
+    top: 420%;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
     color: white;
