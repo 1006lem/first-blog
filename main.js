@@ -138,6 +138,8 @@ let originAndClones = document.querySelectorAll('.origin_and_clone');
 originAndClones.forEach((originAndClone, index) => {
     // 현재 .origin_and_clone의 하위 .rail 요소 선택
     let rail = originAndClone.querySelector('.rail');
+    // .rail에 새 아이디 부여 
+    rail.id = 'rail' + (index + 1);
 
     // .rail 요소 복제
     let clone = rail.cloneNode(true);

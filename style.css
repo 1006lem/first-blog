@@ -1,5 +1,6 @@
 p {
     font-family: 'Tektur', sans-serif;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -168,14 +169,51 @@ header .inner {
     padding-right: 20px;
 }
 
+/* 첫 번째 레일 */
+#rail1 img{
+    padding-left: 60px;
+}
+#railClone1 img{
+    padding-left: 60px;
+}
+
+
+/* 세 번째 레일 */
+#rail3 img{
+    padding-left: 30px;
+}
+#railClone3 img{
+    padding-left: 30px;
+}
+
+
 /* 기술 스택 무한 롤링 */
-.rail.original {
-	animation: rollingleft1 33s linear infinite;
+
+/* 1번째 레일 애니메이션 */
+#rail1 {
+	animation: rollingleft1 10s linear infinite;
 } 
-.rail.clone {
-	animation: rollingleft2 33s linear infinite;
+#railClone1 {
+	animation: rollingleft2 10s linear infinite;
 } 
 
+/* 2번째 레일 애니메이션 */
+#rail2 {
+	animation: rollingright1 10s linear infinite;
+} 
+#railClone2 {
+	animation: rollingright2 10s linear infinite;
+} 
+
+/* 3번째 레일 애니메이션 */
+#rail3 {
+	animation: rollingleft1 13s linear infinite;
+} 
+#railClone3 {
+	animation: rollingleft2 13s linear infinite;
+} 
+
+/* 왼쪽 이동 애니메이션 */
 @keyframes rollingleft1 {
 	0% { transform: translateX(0); }
 	50% { transform: translateX(-100%); }
@@ -188,7 +226,18 @@ header .inner {
 	100% { transform: translateX(-200%); }
 } 
 
+/* 오른쪽 이동 애니메이션 */
+@keyframes rollingright1 {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    50.01% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
 
+@keyframes rollingright2 {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
 
 .Kubernetes{
     position:absolute;
