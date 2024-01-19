@@ -36,11 +36,12 @@ header{
 }
 
 header .inner {
+    position: relative;
+    display: absolute;
     float:right;
     margin-right: 20px;
-    /* text-align: center; */
-    /* TODO: 중앙정렬 */
-    margin-top: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 /* 입력 창 (검색) */
@@ -55,7 +56,8 @@ header .inner {
     background-color: #58585863;
     padding-right: 22px; 
     /* 글자색 */
-    color: #6b6b6b7e; 
+    /* color: #6b6b6b7e;  */
+    color: #fafafad5; 
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
 }
@@ -82,17 +84,12 @@ header .inner {
     position:relative;
     display:inline-block;
     margin-left: 10px;
-    /* float:right; */
 }
 
 .dropdown button{
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
     border-color: transparent;
     background-color: transparent;
-    padding-bottom: 5px;
-    
 }
 
 .dropdown-content {
@@ -100,10 +97,11 @@ header .inner {
     /* 조상인 dropdown 기준으로 배치 (position: absolute) */
     position: absolute;
     color: white;
-    /* background-color: rgba(53, 53, 53, 0.516); */
     border-radius: 8px;
-    width: 45px;
-    /* z-index: 1; */
+}
+
+.dropdown-content ul{
+    margin-left: -10px;
 }
 
 .dropdown-content ul li{
@@ -142,7 +140,6 @@ header .inner {
     /*block tag에서 속성 변화*/
     display: inline-block;
     font-size: 2rem;
-    /* white-space: nowrap; */
 }
 
 
@@ -377,7 +374,7 @@ header .inner {
 .Kubernetes{
     position:absolute;
     left: 50%;
-    top: 200%;
+    top: 220%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -386,7 +383,7 @@ header .inner {
 .Docker{
     position:absolute;
     left: 50%;
-    top: 280%;
+    top: 320%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -405,7 +402,7 @@ header .inner {
 .Android-Studio{
     position:absolute;
     left: 50%;
-    top: 340%;
+    top: 400%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -420,7 +417,7 @@ header .inner {
 .links{
     position:absolute;
     left: 50%;
-    top: 410%;
+    top: 480%;
     /* padding-bottom: 10px; */
     transform: translate(-50%, -50%);
     color: #e3cf5e(255, 255, 255, 0.476);
@@ -434,7 +431,7 @@ header .inner {
 .close{
     position:absolute;
     left: 50%;
-    top: 420%;
+    top: 490%;
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.891);
     text-align: center;
@@ -445,7 +442,7 @@ header .inner {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .link-content a {
@@ -464,7 +461,7 @@ header .inner {
 footer{
     position:absolute;
     left: 50%;
-    top: 440%;
+    top: 510%;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.476);

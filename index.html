@@ -19,25 +19,25 @@
             <span class="search">
                 <s_search>
                     <input class="input" type="text" id="searchInput" onkeypress="if (event.keyCode == 13) { searchText(); }">
-                    <button type="submit" onclick="searchText()"><i class="fas fa-search" style="color: #ffffff;"></i></button>
-                </s_search>
+                    <button type="submit" onclick="searchText()"><i class="fas fa-search fa-fw" style="color: #ffffff;"></i></button>
+                </span>
             </span>
             
     
             <!-- 링크 드롭다운 메뉴바 --> 
-            <span class="dropdown">
+            <div class="dropdown">
                 <button onclick="btnClick()" class="dropdown-btn"><i class="fas fa-link" style="color:rgb(0, 0, 0);"></i></button>
                 <div class="dropdown-content">
                     <ul type="none">
                         <li><a href="https://www.kyumin.blog" target="_blank">
                             <img src="images/tistory.svg" alt="tistory Logo" height="30px">
-                            <span style="color:#e3cf5e"><p>blog</p></span></a></li>
+                            <span style="color: rgba(255, 255, 255, 0.881)"><p>blog</p></span></a></li>
                         <li><a href="https://github.com/1006lem" target="_blank">
                             <img src="images/github2.svg" alt="github Logo" height="30px">
-                            <span style="color:#e3cf5e"><p>github</p></span></a></li>
+                            <span style="color:rgba(255, 255, 255, 0.881)"><p>github</p></span></a></li>
                     </ul>
                 </div>
-            </span>
+            </div>
         </nav>
     </header>
 
