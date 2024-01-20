@@ -9,6 +9,8 @@
 
 > 개발기간: 2024.1.10 ~ 2024.1.19
 
+> 배포 페이지 [바로가기](http://kmkim.dothome.co.kr)
+
 <br>
 
 ## 프로젝트 소개
@@ -72,7 +74,7 @@ First-Blog는 자바스크립트 공부 후 처음 만든 웹사이트입니다.
 
 <!-- ![full screen](/images/screen/full_screen.png) -->
 
-<p align="center"><img width="300" alt="image" src="https://github.com/1006lem/first-blog/assets/68532437/01b05d38-a57e-473e-95cf-259aa2c3342d"></p>
+<p align="center"><img width="300" alt="image" src="https://github.com/1006lem/first-blog/assets/68532437/f7c81dcb-e314-4d46-9f25-9fc72fa3c93b"></p>
 
 
 <br>
